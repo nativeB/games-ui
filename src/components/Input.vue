@@ -1,5 +1,5 @@
 <template>
-  <div class="futureinput futureinput--text">
+  <div class="p_input p_input--text">
     <label class="required" for="example1">{{ label }}</label>
     <input
       @input="inputChanged"
@@ -10,7 +10,7 @@
       :max="max"
       :placeholder="placeHolder"
     />
-    <span class="futureinput__help">{{ help }}</span>
+    <span class="p_input__help">{{ help }}</span>
   </div>
 </template>
 

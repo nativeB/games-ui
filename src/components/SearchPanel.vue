@@ -26,7 +26,7 @@
       />
     </div>
     <div>
-      <button class="futurebutton" @click="cleanAndSearch">Search</button>
+      <button class="p_button" @click="cleanAndSearch">Search</button>
     </div>
   </div>
 </template>
