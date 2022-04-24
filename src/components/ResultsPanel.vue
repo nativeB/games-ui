@@ -1,7 +1,9 @@
 <template>
   <div class="panel full">
     <div class="panel__header">
-      <h1 class="panel__title">Results</h1>
+      <h1 class="panel__title">
+        Results({{ games.length }} / {{ totalRecords }})
+      </h1>
     </div>
     <div class="panel__body" v-if="games.length">
       <ResultsItem v-for="(game, index) in games" :key="index" :result="game" />
@@ -20,7 +22,7 @@ export default defineComponent({
   components: { ResultsItem },
   name: "ResultsPanel",
   computed: {
-    ...mapState(["games"]),
+    ...mapState(["games", "totalRecords"]),
   },
 });
 </script>
